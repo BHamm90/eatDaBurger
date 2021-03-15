@@ -1,0 +1,31 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Allows users to create a burger, which populates a list and then they have the option to devour it. Sending the burger devoured to another list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BHamm90/eatABurger.git"
+  },
+  "keywords": [
+    "Express",
+    "ORM",
+    "Router",
+    "Handlebars",
+    "Controllers"
+  ],
+  "author": "Brian Hamm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BHamm90/eatABurger/issues"
+  },
+  "homepage": "https://github.com/BHamm90/eatABurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
+}
