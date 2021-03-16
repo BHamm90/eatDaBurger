@@ -1,31 +1,20 @@
 {
-  "name": "burger",
+  "name": "eatDaBurger",
   "version": "1.0.0",
-  "description": "Allows users to create a burger, which populates a list and then they have the option to devour it. Sending the burger devoured to another list.",
+  "description": "This app is used to create burgers of the users choice. Then devour the burgers in real time while tracking what you devoured.",
   "main": "server.js",
   "scripts": {
-    "test": "node server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BHamm90/eatABurger.git"
-  },
-  "keywords": [
-    "Express",
-    "ORM",
-    "Router",
-    "Handlebars",
-    "Controllers"
-  ],
   "author": "Brian Hamm",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BHamm90/eatABurger/issues"
-  },
-  "homepage": "https://github.com/BHamm90/eatABurger#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.1",
-    "mysql": "^2.18.1"
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }

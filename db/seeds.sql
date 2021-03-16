@@ -1,10 +1,6 @@
-USE burger_db
-
-INSERT INTO burger (burger_name)
-VALUES ("Bacon Burger")
-
-INSERT INTO burger (burger_name)
-VALUES ("Western Burger")
-
-INSERT INTO burger (burger_name)
-VALUES ("Mushroom Swiss Burger")
+INSERT INTO burgers (burger_name) VALUES ('Molly');
+INSERT INTO burgers (burger_name) VALUES ('Charlie');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Poppy', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Oscar', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Smudge', true);
+INSERT INTO burgers (burger_name) VALUES ('Daisy');
