@@ -1,5 +1,5 @@
 // Import MySQL connection.
-const connection = require('./connection.js');
+const connection = require('./connection');
 
 // Helper function for SQL syntax to add question marks (?, ?, ?) in query
 const printQuestionMarks = (num) => {
@@ -37,6 +37,7 @@ const objToSql = (ob) => {
 
 // Object for all our SQL statement functions.
 const orm = {
+  
   selectAll(tableInput, cb) {
     const queryString = `SELECT * FROM ${tableInput};`;
     connection.query(queryString, (err, result) => {
@@ -46,6 +47,7 @@ const orm = {
       cb(result);
     });
   },
+
   insertOne(table, cols, vals, cb) {
     let queryString = `INSERT INTO ${table}`;
 
@@ -66,7 +68,7 @@ const orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+
   updateOne(table, objColVals, condition, cb) {
     let queryString = `UPDATE ${table}`;
 
@@ -84,6 +86,7 @@ const orm = {
       cb(result);
     });
   },
+
   deleteOne(table, condition, cb) {
     let queryString = `DELETE FROM ${table}`;
     queryString += ' WHERE ';
@@ -97,7 +100,7 @@ const orm = {
       cb(result);
     });
   },
+
 };
 
-// Export the orm object for the model (cat.js).
 module.exports = orm;

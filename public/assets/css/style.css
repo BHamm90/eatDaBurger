@@ -1,19 +1,8 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
-}
+#backgroundImage {
+  background: url(/public/assets/img/background.jpg);
+  background-color: coral;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+};
